@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-namespace NovelGame
+namespace ITAN_GAME
 {
     public class UserScriptManager : MonoBehaviour
     {

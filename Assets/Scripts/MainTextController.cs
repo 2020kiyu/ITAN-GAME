@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-namespace NovelGame
+namespace ITAN_GAME
 {
     public class MainTextController : MonoBehaviour
     {

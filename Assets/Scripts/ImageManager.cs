@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace NovelGame
+namespace ITAN_GAME
 {
     public class ImageManager : MonoBehaviour
     {

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace NovelGame
+namespace ITAN_GAME
 {
     public class GameManager : MonoBehaviour
     {
@@ -12,6 +12,7 @@ namespace NovelGame
         public UserScriptManager userScriptManager;
         public MainTextController mainTextController;
         public ImageManager imageManager;
+        public ButtonController buttonController;
 
         // ユーザスクリプトの、今の行の数値。クリック（タップ）のたびに1ずつ増える。
         [System.NonSerialized] public int lineNumber;
