@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class DataManager : MonoBehaviour
+public class StatusDataManager : MonoBehaviour
 {
     // Status
     public TextMeshProUGUI name_text_main;
@@ -57,7 +57,7 @@ public class DataManager : MonoBehaviour
     public long meityu_data;
     public long kaihi_data;
     public long CRT_data;
-    public long sokudo_data;
+    public double sokudo_data;
 
     // Start is called before the first frame update
     void Start()
@@ -95,7 +95,7 @@ public class DataManager : MonoBehaviour
         meityu_data = 9999999;
         kaihi_data = 9;
         CRT_data = 99;
-        sokudo_data = 999;
+        sokudo_data = 99.99;
 
     }
 
@@ -129,6 +129,6 @@ public class DataManager : MonoBehaviour
         meityu_text.text = meityu_data.ToString("N0");
         kaihi_text.text = kaihi_data.ToString("N0");
         CRT_text.text = CRT_data.ToString("N0");
-        sokudo_text.text = sokudo_data.ToString("N0");
+        sokudo_text.text = sokudo_data.ToString("N2") + " / sec";
     }
 }
