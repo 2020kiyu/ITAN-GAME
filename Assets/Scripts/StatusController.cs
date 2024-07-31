@@ -10,11 +10,8 @@ public class StatusController : MonoBehaviour
     public Button sukiru_Button;
     public Button syojihin_Button;
     public Button option_Button;
-    public Button status_X_Button;
-    public Button soubi_X_Button;
-    public Button sukiru_X_Button;
-    public Button syojihin_X_Button;
-    public Button option_X_Button;
+    public Button X_Button;
+    public GameObject popup_Object;
     public GameObject status_Object;
     public GameObject soubi_Object;
     public GameObject sukiru_Object;
@@ -29,64 +26,50 @@ public class StatusController : MonoBehaviour
         sukiru_Button.onClick.AddListener(Sukiru_ButtonClick);
         syojihin_Button.onClick.AddListener(Syojihin_ButtonClick);
         option_Button.onClick.AddListener(Option_ButtonClick);
-        status_X_Button.onClick.AddListener(Status_X_ButtonClick);
-        soubi_X_Button.onClick.AddListener(Soubi_X_ButtonClick);
-        sukiru_X_Button.onClick.AddListener(Sukiru_X_ButtonClick);
-        syojihin_X_Button.onClick.AddListener(Syojihin_X_ButtonClick);
-        option_X_Button.onClick.AddListener(Option_X_ButtonClick);
+        X_Button.onClick.AddListener(X_ButtonClick);
         AllDeActive();
 
     }
     void AllDeActive()
     {
+        popup_Object.SetActive(false);
         status_Object.SetActive(false);
         soubi_Object.SetActive(false);
         sukiru_Object.SetActive(false);
         syojihin_Object.SetActive(false);
         option_Object.SetActive(false);
     }
-    void Status_ButtonClick()
+    public void Status_ButtonClick()
     {
         AllDeActive();
+        popup_Object.SetActive(true);
         status_Object.SetActive(true);
     }
-    void Soubi_ButtonClick()
+    public void Soubi_ButtonClick()
     {
         AllDeActive();
+        popup_Object.SetActive(true);
         soubi_Object.SetActive(true);
     }
-    void Sukiru_ButtonClick()
+    public void Sukiru_ButtonClick()
     {
         AllDeActive();
+        popup_Object.SetActive(true);
         sukiru_Object.SetActive(true);
     }
-    void Syojihin_ButtonClick()
+    public void Syojihin_ButtonClick()
     {
         AllDeActive();
+        popup_Object.SetActive(true);
         syojihin_Object.SetActive(true);
     }
-    void Option_ButtonClick()
+    public void Option_ButtonClick()
     {
         AllDeActive();
+        popup_Object.SetActive(true);
         option_Object.SetActive(true);
     }
-    void Status_X_ButtonClick()
-    {
-        AllDeActive();
-    }
-    void Soubi_X_ButtonClick()
-    {
-        AllDeActive();
-    }
-    void Sukiru_X_ButtonClick()
-    {
-        AllDeActive();
-    }
-    void Syojihin_X_ButtonClick()
-    {
-        AllDeActive();
-    }
-    void Option_X_ButtonClick()
+    public void X_ButtonClick()
     {
         AllDeActive();
     }
